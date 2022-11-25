@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "8471b664-9eb9-4590-a51b-f5423eeabe30",
+		"name": "INITIALIZE_OCI_REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OneTimeInitializationCall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"jsrsasign\", responseBody);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/8.0.12/jsrsasign-all-min.js",
+					"protocol": "https",
+					"host": [
+						"cdnjs",
+						"cloudflare",
+						"com"
+					],
+					"path": [
+						"ajax",
+						"libs",
+						"jsrsasign",
+						"8.0.12",
+						"jsrsasign-all-min.js"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
